@@ -6,10 +6,10 @@ import { mockProjects, mockTasks, mockChartData } from "@/lib/mock-data"
 export default function OperationalDashboardPage() {
   const recentFiles = mockProjects.flatMap(p => p.files)
   // Transform chartData to match expected type
-  const chartData = mockChartData.map(item => ({
+  const chartData: { name: string; projects: number; files: number }[] = mockChartData.map(item => ({
     name: item.name,
-    projects: item.projects || 0,
-    files: item.files || 0,
+    projects: Number(item.projects) || 0,
+    files: Number(item.files) || 0,
   }))
   
   return (
