@@ -230,12 +230,12 @@ export const mockKPIs: KPIMetric[] = [
 ]
 
 export const mockChartData: ChartData[] = [
-  { name: "Jan", value: 12, projects: 12 },
-  { name: "Feb", value: 15, projects: 15 },
-  { name: "Mar", value: 18, projects: 18 },
-  { name: "Apr", value: 22, projects: 22 },
-  { name: "May", value: 20, projects: 20 },
-  { name: "Jun", value: 24, projects: 24 },
+  { name: "Jan", value: 12, projects: 12, files: 45 },
+  { name: "Feb", value: 15, projects: 15, files: 52 },
+  { name: "Mar", value: 18, projects: 18, files: 68 },
+  { name: "Apr", value: 22, projects: 22, files: 78 },
+  { name: "May", value: 20, projects: 20, files: 72 },
+  { name: "Jun", value: 24, projects: 24, files: 85 },
 ]
 
 export const languageOptions = [
